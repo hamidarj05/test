@@ -7,11 +7,12 @@
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-100">
 
-  <div class="text-center">
-    <button id="welcomeBtn" class="bg-purple-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-purple-700 transition">
+  <div class="text-center px-4">
+    <button id="welcomeBtn"
+      class="bg-purple-600 text-white px-8 py-4 rounded-2xl text-3xl sm:text-4xl font-bold hover:bg-purple-700 transition-all duration-300">
       Click Me
     </button>
-    <p id="message" class="mt-4 text-xl"></p>
+    <p id="message" class="mt-6 text-2xl sm:text-3xl font-medium"></p>
   </div>
 
   <script>
@@ -19,17 +20,15 @@
     const message = document.getElementById("message");
 
     button.onclick = function () {
-      // Show welcome message
       message.textContent = "Welcome Hamba";
-      message.className = "mt-4 text-xl text-green-600";
+      message.className = "mt-6 text-2xl sm:text-3xl font-semibold text-green-600";
 
-      // Change to Rakiya after 2 seconds
       setTimeout(() => {
         message.textContent = "I mean, welcome Rakiya";
-        message.className = "mt-4 text-xl text-blue-600";
+        message.className = "mt-6 text-2xl sm:text-3xl font-semibold text-blue-600";
       }, 2000);
     };
   </script>
 
 </body>
-</html>
+</h
